@@ -1,0 +1,1835 @@
+<html>
+
+<head>
+    <link rel="StyleSheet" href="css/style1.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <link rel="StyleSheet" href="css/core/calendar.css">
+    <script language="javascript" type="text/javascript" src="js/core/gui.js"></script>
+    <script language="javascript" type="text/javascript" src="js/core/util.js"></script>
+    <script language="javascript" type="text/javascript" src="js/core/calendar.js"></script>
+    <script type="text/javascript">
+        GUI_CONSTANTS.__IMAGE_PATH__ = "images";
+    </script>
+    <title>JSP Page</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <table align="center">
+                    <tr>
+                        <td align="center">
+                            <input type="hidden" name="_edit" />
+                            <span style="display: none">
+                                <input type="button" class="button" value="View"
+                                    onclick="view()" />&nbsp;&nbsp;&nbsp;&nbsp;Update
+                            </span>
+                            <input type="hidden" name="_view" />
+                            <span>
+                                <input type="button" class="button" value="Edit" onclick="edit()" />
+                            </span>
+                            Biodata/profile(Under Graduate)
+
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="PRINT"
+                                onclick="printInfo('printIt', 'css/style1.css')" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="printIt">
+                    <table style="height: 100%" border="1">
+                        <tr>
+                            <td id="content">
+                                <form name="acadUgBiodataUpdate" id="acadUgBiodataUpdate" action="biodataUgView.jsp"
+                                    method="post">
+                                    <table align="center" style="height: 100px;vertical-align: top" width="100%">
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <table cellpadding="0" cellspacing="1" width="100%">
+                                                    <td valign="top">
+                                                        <img src=" ./images.png" alt="No Photo Available"
+                                                            style="width: 80px;height: 80px">
+                                                        <!--<img src="image_viewer?user_code=21EE01038&img_type=photo" alt="No Photo Available" style="width: 80px;height: 90px"/>-->
+                                                    </td>
+                                                    <td colspan="4" valign="top" align="center">
+                                                        <font size="3">
+                                                            <b>INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR</b>
+                                                        </font>
+                                                        <br>
+                                                        <table align="center">
+                                                            <tr>
+                                                                <td bgcolor="pink">GUID :</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" align="center" bgcolor="pink">
+                                                                    Section : 1(<b>Applicable for 1st year students
+                                                                        only</b>
+                                                                    )
+                                                                </td>
+                                                            </tr>
+                                                            <!--    <tr>
+                                                                    <td colspan="4"  align="center">
+                                                                        <img src="bar_code?code=21EE01038" alt="Barcode not available" />
+                                                                    </td>
+                                                                </tr>-->
+                                                        </table>
+                                                        <br />
+                                                        <table align="center">
+                                                            <tr>
+                                                                <td bgcolor="yellow" colspan="2">
+                                                                    <a onclick="window.open('https://eims.iitbbs.ac.in/ERPAdministration/imageUploader.jsp?ssoToken=6B14F68E62465C5A92018D169BB69E7E.worker2FAA698FDF6BA3379FFC3A952A9C37389.worker1VQ570TI86NLYJWZ5PVP7YVJ63W6T9GF1NZSKYJ1V6HPLBXGB44TM4H58NDN48CBE&stakeholder_code=21EE01038&stakeholder_type=SU&image_type=photo', '_W_', 'width=400,height=400');"
+                                                                        target="_blank">
+                                                                        <font color="maroon">
+                                                                            <b>Upload Your Current Photo</b>
+                                                                        </font>
+                                                                    </a>
+                                                                    <br>
+                                                                    <a onclick="window.open('https://eims.iitbbs.ac.in/ERPAdministration/imageUploader.jsp?ssoToken=6B14F68E62465C5A92018D169BB69E7E.worker2FAA698FDF6BA3379FFC3A952A9C37389.worker1VQ570TI86NLYJWZ5PVP7YVJ63W6T9GF1NZSKYJ1V6HPLBXGB44TM4H58NDN48CBE&stakeholder_code=21EE01038&stakeholder_type=SU&image_type=sign', '_W_', 'width=400,height=400');"
+                                                                        target="_blank">
+                                                                        <font color="maroon">
+                                                                            <b>Upload Your Current Signature</b>
+                                                                        </font>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td id="_photos">
+                                                        <table cellpadding="0" cellspacing="1">
+                                                            <tr>
+                                                                <td bgcolor="pink">
+                                                                    Upload Date <br>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=" BORDER-BOTTOM: #c2c2c2 1px solid;">
+                                                                    <img src="./vinay.jpg" alt="No Photo Available"
+                                                                        style="width: 80px;height: 90px" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="./vinay_s.jpg" alt="No Sign Available"
+                                                                        style="width: 80px;height: 20px" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Basic Information: </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Rollno</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>
+                                                                <b>21EE01038</b>
+                                                            </span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="hidden" name="rollno" style="width: 200px"
+                                                                    value="21EE01038" />
+                                                                <b>21EE01038</b>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Name</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>
+                                                                <b>DIVVELA VINAY KUMAR</b>
+                                                            </span>
+                                                            <span style="display:none">
+                                                                <input type="text" name="name" style="width: 200px"
+                                                                    value="DIVVELA VINAY KUMAR" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Name in Hindi</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>
+                                                                <b></b>
+                                                                <br>Not Verified by Rajbhasha Bibhag
+                                                            </span>
+                                                            <span style="display:none"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Department </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>ELECTRICAL ENGINEERING</span>
+                                                            <span style="display: none">
+                                                                <select name="deptcode" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="AH">ARTIFICIAL INTELLIGENCE AND HIGH
+                                                                        PERFORMANCE COMPUTING RESEARCH CENTER</option>
+                                                                    <option value="AO">ATMOSPHERE & OCEAN SCIENCES
+                                                                    </option>
+                                                                    <option value="BI">BIOSCIENCES</option>
+                                                                    <option value="CF">CENTRAL INSTRUMENTATION FACILITY
+                                                                    </option>
+                                                                    <option value="CY">CHEMISTRY</option>
+                                                                    <option value="CV">CIVIL ENGINEERING</option>
+                                                                    <option value="CL">CLIMATE SCIENCES</option>
+                                                                    <option value="CS">COMPUTER SCIENCE & ENGINEERING
+                                                                    </option>
+                                                                    <option value="EM">ECONOMICS</option>
+                                                                    <option value="EE" selected>ELECTRICAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="EC">ELECTRONICS & COMMUNICATION
+                                                                        ENGINEERING</option>
+                                                                    <option value="EL">ENGLISH</option>
+                                                                    <option value="EV">ENVIRONMENTAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="GG">GEOLOGY</option>
+                                                                    <option value="GE">GEOSCIENCES</option>
+                                                                    <option value="GT">GEOTECHNICAL ENGINEERING</option>
+                                                                    <option value="IN">INFRASTRUCTURE</option>
+                                                                    <option value="SD">ITEP</option>
+                                                                    <option value="MA">MATHEMATICS</option>
+                                                                    <option value="MC">MECHANICAL</option>
+                                                                    <option value="MT">MINERALS METALLURGICAL AND
+                                                                        MATERIALS ENGINEERING</option>
+                                                                    <option value="PI">PHILOSOPHY</option>
+                                                                    <option value="PH">PHYSICS</option>
+                                                                    <option value="PS">PSYCHOLOGY</option>
+                                                                    <option value="BS">SCHOOL OF BASIC SCIENCES</option>
+                                                                    <option value="EO">SCHOOL OF EARTH OCEAN AND CLIMATE
+                                                                        SCIENCES</option>
+                                                                    <option value="ES">SCHOOL OF ELECTRICAL AND COMPUTER
+                                                                        SCIENCES</option>
+                                                                    <option value="HS">SCHOOL OF HUMANITIES SOCIAL
+                                                                        SCIENCES AND MANAGEMENT</option>
+                                                                    <option value="IF">SCHOOL OF INFRASTRUCTURE</option>
+                                                                    <option value="ME">SCHOOL OF MECHANICAL SCIENCES
+                                                                    </option>
+                                                                    <option value="MM">SCHOOL OF MINERALS METALLURGICAL
+                                                                        AND MATERIALS ENGINEERING</option>
+                                                                    <option value="SE">STRUCTURAL ENGINEERING</option>
+                                                                    <option value="TE">TRANSPORTATION ENGINEERING
+                                                                    </option>
+                                                                    <option value="WE">WATER RESOURCES ENGINEERING
+                                                                    </option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Minor Course </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span></span>
+                                                            <span style="display: none">
+                                                                <select name="minorCoursecode" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="AO">ATMOSPHERE & OCEAN SCIENCES
+                                                                    </option>
+                                                                    <option value="BI">BIOSCIENCES</option>
+                                                                    <option value="CY">CHEMISTRY</option>
+                                                                    <option value="CV">CIVIL ENGINEERING</option>
+                                                                    <option value="CL">CLIMATE SCIENCES</option>
+                                                                    <option value="CS">COMPUTER SCIENCE & ENGINEERING
+                                                                    </option>
+                                                                    <option value="EM">ECONOMICS</option>
+                                                                    <option value="EE">ELECTRICAL ENGINEERING</option>
+                                                                    <option value="EC">ELECTRONICS & COMMUNICATION
+                                                                        ENGINEERING</option>
+                                                                    <option value="EL">ENGLISH</option>
+                                                                    <option value="EV">ENVIRONMENTAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="GG">GEOLOGY</option>
+                                                                    <option value="GE">GEOSCIENCES</option>
+                                                                    <option value="GT">GEOTECHNICAL ENGINEERING</option>
+                                                                    <option value="IN">INFRASTRUCTURE</option>
+                                                                    <option value="SD">ITEP</option>
+                                                                    <option value="MA">MATHEMATICS</option>
+                                                                    <option value="MC">MECHANICAL</option>
+                                                                    <option value="MT">MINERALS METALLURGICAL AND
+                                                                        MATERIALS ENGINEERING</option>
+                                                                    <option value="PI">PHILOSOPHY</option>
+                                                                    <option value="PH">PHYSICS</option>
+                                                                    <option value="PS">PSYCHOLOGY</option>
+                                                                    <option value="SE">STRUCTURAL ENGINEERING</option>
+                                                                    <option value="TE">TRANSPORTATION ENGINEERING
+                                                                    </option>
+                                                                    <option value="WE">WATER RESOURCES ENGINEERING
+                                                                    </option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Course</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>ELECTRICAL ENGINEERING</span>
+                                                            <span style="display: none">
+                                                                <select name="coursecode" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="AM6">AM6 : ADVANCE MAINTENANCE
+                                                                        TECHNOLOGY</option>
+                                                                    <option value="SD1">SD1 : ITEP MATHEMATICS
+                                                                        (B.SC.-B.ED.)</option>
+                                                                    <option value="SD2">SD2 : ITEP PHYSICS (B.SC.-B.ED.)
+                                                                    </option>
+                                                                    <option value="SD3">SD3 : ITEP CHEMISTRY
+                                                                        (B.SC.-B.ED.)</option>
+                                                                    <option value="SD4">SD4 : ITEP ECONOMICS
+                                                                        (B.SC.-B.ED.)</option>
+                                                                    <option value="SD5">SD5 : ITEP MATHEMATICS SECONDARY
+                                                                        STAGE OF 11 AND 12</option>
+                                                                    <option value="SD7">SD7 : ITEP MATHEMATICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN CHEMISTRY</option>
+                                                                    <option value="SD8">SD8 : ITEP MATHEMATICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN ECONOMICS</option>
+                                                                    <option value="SD9">SD9 : ITEP PHYSICS SECONDARY
+                                                                        STAGE OF 11 AND 12</option>
+                                                                    <option value="SD10">SD10 : ITEP PHYSICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN MATHEMATICS
+                                                                    </option>
+                                                                    <option value="SD11">SD11 : ITEP PHYSICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN CHEMISTRY</option>
+                                                                    <option value="SD12">SD12 : ITEP PHYSICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN ECONOMICS</option>
+                                                                    <option value="SD13">SD13 : ITEP CHEMISTRY SECONDARY
+                                                                        STAGE OF 11 AND 12</option>
+                                                                    <option value="CS2">CS2 : B.TECH. IN COMPUTER
+                                                                        SCIENCE AND ENGINEERING AND M.TECH. IN COMPUTER
+                                                                        SCIENCE AND ENGINEERING</option>
+                                                                    <option value="PED2">PED2 : B.TECH. IN ELECTRICAL
+                                                                        ENGINEERING AND M.TECH. IN POWER ELECTRONICS AND
+                                                                        DRIVES</option>
+                                                                    <option value="TES2">TES2 : B.TECH. IN CIVIL
+                                                                        ENGINEERING AND M.TECH. IN TRANSPORTATION
+                                                                        ENGINEERING</option>
+                                                                    <option value="CE">CE : CIVIL ENGINEERING</option>
+                                                                    <option value="CS">CS : COMPUTER SCIENCE AND
+                                                                        ENGINEERING</option>
+                                                                    <option value="ECE">ECE : ELECTRONICS AND
+                                                                        COMMUNICATION ENGINEERING</option>
+                                                                    <option value="EE" selected>EE : ELECTRICAL
+                                                                        ENGINEERING</option>
+                                                                    <option value="ME">ME : MECHANICAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="MME">MME : METALLURGICAL AND
+                                                                        MATERIALS ENGINEERING</option>
+                                                                    <option value="SE2">SE2 : B.TECH. IN CIVIL
+                                                                        ENGINEERING AND M.TECH. IN STRUCTURAL
+                                                                        ENGINEERING</option>
+                                                                    <option value="ENV2">ENV2 : B.TECH. IN CIVIL
+                                                                        ENGINEERING AND M.TECH. IN ENVIRONMENTAL
+                                                                        ENGINEERING</option>
+                                                                    <option value="MSD2">MSD2 : B.TECH. IN MECHANICAL
+                                                                        ENGINEERING AND M.TECH. IN MECHANICAL SYSTEMS
+                                                                        DESIGN</option>
+                                                                    <option value="MN2">MN2 : B.TECH. IN MECHANICAL
+                                                                        ENGINEERING AND M.TECH. IN MANUFACTURING
+                                                                        ENGINEERING</option>
+                                                                    <option value="TSE2">TSE2 : B.TECH. IN MECHANICAL
+                                                                        ENGINEERING AND M.TECH. IN THERMAL SCIENCE AND
+                                                                        ENGINEERING</option>
+                                                                    <option value="MM2">MM2 : B.TECH. IN METALLURGICAL
+                                                                        AND MATERIALS ENGINEERING AND M.TECH. IN
+                                                                        METALLURGICAL AND MATERIALS ENGINEERING</option>
+                                                                    <option value="SD14">SD14 : ITEP CHEMISTRY SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN MATHEMATICS
+                                                                    </option>
+                                                                    <option value="SD15">SD15 : ITEP CHEMISTRY SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN PHYSICS</option>
+                                                                    <option value="SD16">SD16 : ITEP CHEMISTRY SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN ECONOMICS</option>
+                                                                    <option value="SD17">SD17 : ITEP ECONOMICS SECONDARY
+                                                                        STAGE OF 11 AND 12</option>
+                                                                    <option value="SD18">SD18 : ITEP ECONOMICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN MATHEMATICS
+                                                                    </option>
+                                                                    <option value="SD19">SD19 : ITEP ECONOMICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN PHYSICS</option>
+                                                                    <option value="SD20">SD20 : ITEP ECONOMICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN CHEMISTRY</option>
+                                                                    <option value="SD6">SD6 : ITEP MATHEMATICS SECONDARY
+                                                                        STAGE OF 9 AND 10 - MINOR IN PHYSICS</option>
+                                                                    <option value="CY5">CY5 : CHEMISTRY</option>
+                                                                    <option value="GG5">GG5 : GEOLOGY</option>
+                                                                    <option value="MA5">MA5 : MATHEMATICS</option>
+                                                                    <option value="PH5">PH5 : PHYSICS</option>
+                                                                    <option value="PSE6">PSE6 : M.TECH. IN POWER SYSTEM
+                                                                        ENGINEERING</option>
+                                                                    <option value="AO5">AO5 : ATMOSPHERE AND OCEAN
+                                                                        SCIENCES</option>
+                                                                    <option value="SE6">SE6 : STRUCTURAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="CT6">CT6 : CLIMATE SCIENCE AND
+                                                                        TECHNOLOGY</option>
+                                                                    <option value="WRE6">WRE6 : WATER RESOURCES
+                                                                        ENGINEERING</option>
+                                                                    <option value="TE6">TE6 : TRANSPORTATION ENGINEERING
+                                                                    </option>
+                                                                    <option value="PD6">PD6 : POWER ELECTRONICS AND
+                                                                        DRIVES</option>
+                                                                    <option value="VL6">VL6 : INTEGRATED CIRCUITS AND
+                                                                        VLSI SYSTEMS</option>
+                                                                    <option value="MM6">MM6 : METALLURGICAL AND
+                                                                        MATERIALS ENGINEERING</option>
+                                                                    <option value="EC6">EC6 : ELECTRICAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="ENV6">ENV6 : ENVIRONMENTAL
+                                                                        ENGINEERING</option>
+                                                                    <option value="GE6">GE6 : GEOTECHNICAL ENGINEERING
+                                                                    </option>
+                                                                    <option value="MT6">MT6 : MATERIALS SCIENCE AND
+                                                                        ENGINEERING</option>
+                                                                    <option value="CS6">CS6 : COMPUTER SCIENCE AND
+                                                                        ENGINEERING</option>
+                                                                    <option value="ST6">ST6 : SEMICONDUCTOR TECHNOLOGY
+                                                                        AND CHIP DESIGN</option>
+                                                                    <option value="AI6">AI6 : ARTIFICIAL INTELLIGENCE
+                                                                    </option>
+                                                                    <option value="MF6">MF6 : MANUFACTURING ENGINEERING
+                                                                    </option>
+                                                                    <option value="TS6">TS6 : THERMAL SCIENCE AND
+                                                                        ENGINEERING</option>
+                                                                    <option value="MS6">MS6 : MECHANICAL SYSTEMS DESIGN
+                                                                    </option>
+                                                                    <option value="RAI6">RAI6 : ROBOTICS AND ARTIFICIAL
+                                                                        INTELLIGENCE</option>
+                                                                    <option value="PS6">PS6 : POWER SYSTEM ENGINEERING
+                                                                    </option>
+                                                                    <option value="SP6">SP6 : SIGNAL PROCESSING AND
+                                                                        COMMUNICATION ENGINEERING</option>
+                                                                    <option value="EP">EP : ENGINEERING PHYSICS</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Hall(Allocated by HMC)</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Hall Attachment(YES/NO)</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>NO</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Room(Allocated by hall)</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid" width="50%">
+                                                            <b>* Date of Birth </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>08-09-2003</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="date_of_birth"
+                                                                    style="width: 200px" value="08-09-2003"
+                                                                    onclick="defaultDatePicker(event, 'DD-MM-YYYY');"
+                                                                    readonly />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid" width="50%">
+                                                            <b>Year of pass </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Blood Group </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>O+</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <select name="blood_group" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="A+">A+</option>
+                                                                    <option value="A-">A-</option>
+                                                                    <option value="B+">B+</option>
+                                                                    <option value="B-">B-</option>
+                                                                    <option value="O+" selected>O+</option>
+                                                                    <option value="O-">O-</option>
+                                                                    <option value="AB+">AB+</option>
+                                                                    <option value="AB-">AB-</option>
+                                                                </select>
+                                                            </span>
+                                                            (Self Stated)
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Allocated EAA </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span></span>
+                                                            <span style="display: none">
+                                                                <select name="eAACode" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Curricula</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>
+                                                                <b>20230</b>
+                                                            </span>
+                                                            <span style="display:none">
+                                                                <input type="text" name="curricula" style="width: 200px"
+                                                                    value="20230" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <script>
+                                                        function spouseDisplay() {
+                                                            if (document.getElementById('marital_status').value == 'Y') {
+                                                                document.getElementById('spouse_name_display').style.display = '';
+                                                            } else {
+                                                                document.getElementById('spouse_name_display').style.display = 'none';
+                                                            }
+                                                        }
+                                                    </script>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Marital Status </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>NO</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <select name="marital_status" id="marital_status"
+                                                                    onchange="spouseDisplay();">
+                                                                    <option value="N" SELECTED>NO</option>
+                                                                    <option value="Y">YES</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="spouse_name_display" style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Spouse Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="spouse_name" id="spouse_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Gender </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>M</span>
+                                                            <span style="display: none">
+                                                                <select name="sex" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="M" selected>MALE</option>
+                                                                    <option value="F">FEMALE</option>
+                                                                    <option value="T">TRANSGENDER</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Category </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>EWS</span>
+                                                            <span style="display: none">
+                                                                <select name="category" style="width: 100px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="GE">GENERAL</option>
+                                                                    <option value="OB">OTHER BACKWARD COMMUNITY</option>
+                                                                    <option value="SC">SCHEDULED CASTE</option>
+                                                                    <option value="ST">SCHEDULED TRIBE</option>
+                                                                    <option value="FN">FOREIGNER</option>
+                                                                    <option value="EWS" selected>EWS</option>
+                                                                </select>
+                                                            </span>
+                                                            (
+                                                            <span></span>
+                                                            <span style="display: none">
+                                                                <select name="pd_status" style="width: 70px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="Y">PD</option>
+                                                                    <option value="N">NA</option>
+                                                                </select>
+                                                            </span>
+                                                            )
+
+                                                            <div style="background-color:yellow">* NA : Not
+                                                                Applicable(Not Physically Disabled)</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Sub Category </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="sub_category"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Nationality </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>INDIAN</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="nationality"
+                                                                    style="width: 200px" value="INDIAN" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Country </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>India</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="country" style="width: 200px"
+                                                                    value="India" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Native State </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <select name="native_state" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="AN">[AN]ANDAMAN & NICOBAR</option>
+                                                                    <option value="AP">[AP]ANDHRA PRADESH</option>
+                                                                    <option value="AR">[AR]ARUNACHAL PRADESH</option>
+                                                                    <option value="AS">[AS]ASSAM</option>
+                                                                    <option value="BI">[BI]BIHAR</option>
+                                                                    <option value="CH">[CH]CHANDIGARH</option>
+                                                                    <option value="CG">[CG]CHATTISGARH</option>
+                                                                    <option value="DH">[DH]DADRA & NAGAR HAVELI</option>
+                                                                    <option value="DD">[DD]DAMAN & DIU</option>
+                                                                    <option value="DL">[DL]DELHI</option>
+                                                                    <option value="GO">[GO]GOA</option>
+                                                                    <option value="GJ">[GJ]GUJARAT</option>
+                                                                    <option value="HR">[HR]HARYANA</option>
+                                                                    <option value="HM">[HM]HIMACHAL PRADESH</option>
+                                                                    <option value="JK">[JK]JAMMU & KASHMIR</option>
+                                                                    <option value="JH">[JH]JHARKHAND</option>
+                                                                    <option value="KT">[KT]KARNATAKA</option>
+                                                                    <option value="KE">[KE]KERALA</option>
+                                                                    <option value="LK">[LK]LAKSHADWEEP</option>
+                                                                    <option value="MP">[MP]MADHYA PRADESH</option>
+                                                                    <option value="MH">[MH]MAHARASHTRA</option>
+                                                                    <option value="MR">[MR]MANIPUR</option>
+                                                                    <option value="ML">[ML]MEGHALAYA</option>
+                                                                    <option value="MZ">[MZ]MIZORAM</option>
+                                                                    <option value="NG">[NG]NAGALAND</option>
+                                                                    <option value="OR">[OR]ORISSA</option>
+                                                                    <option value="PO">[PO]PONDICHERRY</option>
+                                                                    <option value="PN">[PN]PUNJAB</option>
+                                                                    <option value="RJ">[RJ]RAJASTHAN</option>
+                                                                    <option value="SK">[SK]SIKKIM</option>
+                                                                    <option value="TN">[TN]TAMIL NADU</option>
+                                                                    <option value="TG">[TG]TELANGANA</option>
+                                                                    <option value="TR">[TR]TRIPURA</option>
+                                                                    <option value="UT">[UT]UTTARANCHAL</option>
+                                                                    <option value="UP">[UP]UTTAR PRADESH</option>
+                                                                    <option value="WB">[WB]WEST BENGAL</option>
+                                                                </select>
+                                                            </span>
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Mother tongue </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <select name="mother_tongue" style="width: 200px">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="01">ASSAMESE</option>
+                                                                    <option value="01">ASSAMESE</option>
+                                                                    <option value="02">BENGALI</option>
+                                                                    <option value="02">BENGALI</option>
+                                                                    <option value="03">ENGLISH</option>
+                                                                    <option value="03">ENGLISH</option>
+                                                                    <option value="04">GUJARATI</option>
+                                                                    <option value="04">GUJARATI</option>
+                                                                    <option value="05">HINDI</option>
+                                                                    <option value="05">HINDI</option>
+                                                                    <option value="06">KANNADA</option>
+                                                                    <option value="06">KANNADA</option>
+                                                                    <option value="07">KASHMIRI</option>
+                                                                    <option value="07">KASHMIRI</option>
+                                                                    <option value="08">MALAYALAM</option>
+                                                                    <option value="08">MALAYALAM</option>
+                                                                    <option value="09">MARATHI</option>
+                                                                    <option value="09">MARATHI</option>
+                                                                    <option value="10">ORIYA</option>
+                                                                    <option value="10">ORIYA</option>
+                                                                    <option value="17">OTHERS</option>
+                                                                    <option value="17">OTHERS</option>
+                                                                    <option value="11">PUNJABI</option>
+                                                                    <option value="11">PUNJABI</option>
+                                                                    <option value="12">SANSKRIT</option>
+                                                                    <option value="12">SANSKRIT</option>
+                                                                    <option value="13">SINDHI</option>
+                                                                    <option value="13">SINDHI</option>
+                                                                    <option value="14">TAMIL</option>
+                                                                    <option value="14">TAMIL</option>
+                                                                    <option value="15">TELUGU</option>
+                                                                    <option value="15">TELUGU</option>
+                                                                    <option value="16">URDU</option>
+                                                                    <option value="16">URDU</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Height(in cms) </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>0</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="height" style="width: 200px"
+                                                                    value="0" onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Weight(in kgs) </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>0</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="weight" style="width: 200px"
+                                                                    value="0" onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Bank Account Number </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>40551663291</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="bank_acc_no"
+                                                                    style="width: 200px" value="40551663291" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Bank IFSC code</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>SBIN0021627</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="bank_ifsc_code"
+                                                                    style="width: 200px" value="SBIN0021627" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Bank Branch Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>STATE BANK OF INDIA</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="bank_branch_name"
+                                                                    style="width: 200px" value="STATE BANK OF INDIA" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Aadhar Card Number : </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>
+                                                                <font color="red"></font>
+                                                            </span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" size="12" name="adhaar_card_no"
+                                                                    value="" onblur="checkIntegerOnly(this);" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Aadhar Card Linked Bank Name : </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="adhaar_bank_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Aadhar Card Linked Bank Branch Name : </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="adhaar_bank_branch_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Aadhar Card Linked Bank Branch IFSC Code : </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="adhaar_bank_ifsc_code"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Aadhar Card Linked Bank Account Number : </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="adhaar_bank_acc_no"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>NAD ID</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="nad_id" style="width: 200px"
+                                                                    value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid" width="50%">
+                                                            <b>Current Status</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="left">
+                                                            <span style="display: none">
+                                                                <input type="hidden" name="currentstatus" value="0" />
+                                                                ON ROLL
+                                                                <a onclick="openStatusUpdateDIV()">Change</a>
+                                                            </span>
+                                                            <span>ON ROLL</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Status History: </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="left" style="vertical-align: top">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td bgcolor="pink">
+                                                            <b>Serial No</b>
+                                                        </td>
+                                                        <td bgcolor="pink">
+                                                            <b>Status </b>
+                                                        </td>
+                                                        <td bgcolor="pink">
+                                                            <b>Active From</b>
+                                                        </td>
+                                                        <td bgcolor="pink">
+                                                            <b>Active To</b>
+                                                        </td>
+                                                        <td bgcolor="pink">
+                                                            <b>Remark</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td bgcolor="pink">
+                                                            <b>1</b>
+                                                        </td>
+                                                        <td bgcolor="pink">ON ROLL </td>
+                                                        <td bgcolor="pink">14-07-2021</td>
+                                                        <td bgcolor="pink"></td>
+                                                        <td bgcolor="pink"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Entrance & Academic Information:
+                                                    </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Nature of Admission </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>JEE</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="nature_of_admission"
+                                                                    style="width: 200px" value="JEE" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* JEE Registration No</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="jee_regno" style="width: 200px"
+                                                                    value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* All India Rank</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>0</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="hidden" name="all_india_rank"
+                                                                    style="width: 200px" value="0"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* All India Rank(Category)</b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="hidden" name="cat_air" style="width: 200px"
+                                                                    value="" onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Qualifying Exam. Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="qual_exam_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Year of Admission </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>2021</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="year_of_admiss"
+                                                                    style="width: 200px" value="2021"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Qualifying Exam. Year </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>0</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="qual_exam_year"
+                                                                    style="width: 200px" value="0"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Percentage of Marks </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>0</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="percent_marks"
+                                                                    style="width: 200px" value="0"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Board/University Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="board_univ_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>(10+2) Education Area </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <select name="hs_educa_area" style="width: 200px"
+                                                                    id="hs_educa_area">
+                                                                    <option value="">SELECT...</option>
+                                                                    <option value="URBAN">URBAN</option>
+                                                                    <option value="RURAL">RURAL</option>
+                                                                </select>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display: none">
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>(10+2) Education Medium </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="hs_educ_medium"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Parental Information: </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Father Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>DIVVELA PULLA RAO</span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="father_name"
+                                                                    style="width: 200px" value="DIVVELA PULLA RAO" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Guardian Name </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span></span>
+                                                            <span style="display: none">
+                                                                <input type="text" name="guardian_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <!--                                                        <tr><td style=" BORDER-BOTTOM: #c2c2c2 1px solid"><b>Parent/Guardians <br>Monthly Income </b> </td>
+                                                                                                                    <td bgcolor="pink" align="right">
+                                                                                                                        <input type="hidden" name="_view"/><span></span>
+                                                                                                                        <input type="hidden" name="_edit"/><span style="display: none"><input type="text" name="fat_guar_mincome" style="width: 200px" value=""  onblur="checkNumericOnly(this)"/></span>
+                                                                                                                    </td>
+                                                                                                                </tr>-->
+                                                </table>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>
+                                                                Parent/Guardians <br>Annual Income
+                                                            </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>148000</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="guar_annual_inc"
+                                                                    style="width: 200px" value="148000"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>
+                                                                Parent/Guardians <br>Profession
+                                                            </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>FARMER</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="parental_profess"
+                                                                    style="width: 200px" value="FARMER" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Contact Information: </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Your Email </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>vinaykumardivvela@gmail.com</span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="e_mail" style="width: 200px"
+                                                                    value="vinaykumardivvela@gmail.com" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Your Institute Email </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">21EE01038@iitbbs.ac.in
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Micro Soft Teams Online Class Password </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>OTP for Institute Email(Must Reset) </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>Your Mobile No </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="telephone_no"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>
+                                                                Guardians <br>Mobile No
+                                                            </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <span>9441816256</span>
+                                                            <span style="display:none">
+                                                                <input type="text" name="parental_mob" id="parental_mob"
+                                                                    value="9441816256" style="width: 200px"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>
+                                                                Guardians <br>Landline No
+                                                            </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="parental_landline"
+                                                                    id="parental_landline" value="" style="width: 200px"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>
+                                                                Guardians <br>E-mail Id
+                                                            </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span>vinaykumardivvela@gmail.com</span>
+                                                            <span style="display:none">
+                                                                <input type="text" name="parental_email"
+                                                                    id="parental_email" style="width: 200px"
+                                                                    value="vinaykumardivvela@gmail.com" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <span>
+                                                    <table align="left" style="vertical-align: top" width="100%"
+                                                        cellpadding="0" cellspacing="1">
+                                                        <tr>
+                                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                                <b>
+                                                                    <font size="2" color="maroon">Permanent Address:
+                                                                    </font>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Address</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">3-36/1
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Village/Town/City</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">NEAR POST OFFICE ,
+                                                                BHEEMAVARAM , YERRUPALEM
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Police Station </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">YERRUPALEM
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Pin No. </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">507202
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>District </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">KHAMMAM
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>State</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">TELANGNA
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Country</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">INDIA
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </span>
+                                                <span style="display: none">
+                                                    <table width="100%">
+                                                        <tr>
+                                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                                <b>
+                                                                    <font size="2" color="maroon">Permanent Address:
+                                                                    </font>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Address</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <textarea name="perm_addr" id="perm_addr" rows="3"
+                                                                    cols="27">3-36/1</textarea>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Village/Town/City</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_vtc" id="perm_vtc"
+                                                                    style="width: 200px"
+                                                                    value="NEAR POST OFFICE , BHEEMAVARAM , YERRUPALEM" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Police Station</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_ps" id="perm_ps"
+                                                                    style="width: 200px" value="YERRUPALEM" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Pin No. </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_pin" id="perm_pin"
+                                                                    style="width: 200px" value="507202"
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>District</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_district"
+                                                                    id="perm_district" style="width: 200px"
+                                                                    value="KHAMMAM" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>State</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_state" id="perm_state"
+                                                                    style="width: 200px" value="TELANGNA" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Country</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="perm_country" id="perm_country"
+                                                                    style="width: 200px" value="INDIA" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </span>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <input type="hidden" name="_view" />
+                                                <span>
+                                                    <table align="left" style="vertical-align: top" width="100%"
+                                                        cellpadding="0" cellspacing="1">
+                                                        <tr>
+                                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                                <b>
+                                                                    <font size="2" color="maroon">
+                                                                        Guardian Mailing Address(<span
+                                                                            style="background-color:yellow">Hall Address
+                                                                            is Not Valid</span>
+                                                                        ):
+                                                                    </font>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Address </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Village/Town/City </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Police Station</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Pin No. </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>District </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>State </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                                <b>Country </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right"></td>
+                                                        </tr>
+                                                    </table>
+                                                </span>
+                                                <span style="display: none">
+                                                    <table width="100%">
+                                                        <tr>
+                                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                                <b>
+                                                                    <font size="2" color="maroon">
+                                                                        Guardian Mailing Address(<span
+                                                                            style="background-color:yellow">Hall Address
+                                                                            is Not Valid</span>
+                                                                        ):
+                                                                    </font>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Address</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <textarea name="mail_addr" id="mail_addr" rows="3"
+                                                                    cols="27"></textarea>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Village/Town/City</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_vtc" id="mail_vtc"
+                                                                    style="width: 200px" value="" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Police Station</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_ps" id="mail_ps"
+                                                                    style="width: 200px" value="" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Pin No. </b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_pin" id="mail_pin"
+                                                                    style="width: 200px" value=""
+                                                                    onblur="checkNumericOnly(this)" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>District</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_district"
+                                                                    id="mail_district" style="width: 200px" value="" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>State</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_state" id="mail_state"
+                                                                    style="width: 200px" value="" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <b>Country</b>
+                                                            </td>
+                                                            <td bgcolor="pink" align="right">
+                                                                <input type="text" name="mail_country" id="mail_country"
+                                                                    style="width: 200px" value="" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style=" BORDER-BOTTOM: #c2c2c3 2px solid">
+                                                <b>
+                                                    <font size="2" color="maroon">Emergency Information: </font>
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Emergency Contact No </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="emerg_contact"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Emergency Contact Person </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="person_name"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Relationship With The Person </b>
+                                                        </td>
+                                                        <td bgcolor="pink" align="right">
+                                                            <input type="hidden" name="_view" />
+                                                            <span></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <input type="text" name="relationship"
+                                                                    style="width: 200px" value="" />
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left" style="vertical-align: top">
+                                                <table align="left" style="vertical-align: top" width="100%"
+                                                    cellpadding="0" cellspacing="1">
+                                                    <tr>
+                                                        <td style=" BORDER-BOTTOM: #c2c2c2 1px solid">
+                                                            <b>* Emergency Contact Address </b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="400px">
+                                                            <input type="hidden" name="_view" />
+                                                            <span style="background-color: pink;"></span>
+                                                            <input type="hidden" name="_edit" />
+                                                            <span style="display: none">
+                                                                <textarea name="emerg_contact_addr"
+                                                                    id="emerg_contact_addr" rows="3"
+                                                                    cols="50"></textarea>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *********************************************************************************************** -->
+                                        <tr>
+                                            <td colspan="2" align="center" style=" BORDER-TOP: #c2c2c2 2px solid"">
+                                                    <font color=" maroon ">
+                                                    * Indicates Verifiable Information.(needs proof to update)<br>
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan=" 2 " align=" center " style=" BORDER-TOP:#c2c2c2 2px
+                                                solid "><b><font color=" red "><b></b></font></b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan=" 2 " align=" center " style=" BORDER-TOP:#c2c2c2 2px
+                                                solid;BORDER-BOTTOM:#c2c2c2 2px solid ">
+                                                    <input type=" hidden " name=" _edit "/><span style=" display:none ">
+                                                        <input type=" button " class=" button " name=" button " id="
+                                                button " value=" UPDATE "  onclick=" updatetable()" />
+                                            </span>
+                                            <input type="hidden " name="action " value="update " />
+                                            <input type="hidden " name="edit " value="true " />
+                            </td>
+                        </tr>
+
+
+                        <!-- *********************************************************************************************** -->
+
+                    </table>
+                    </form>
+
+
+
+
+            </td>
+        </tr>
+    </table>
+
+
+    </div>
+    </td>
+    </tr>
+    </table>
+
+
+
+
+
+
+    <div style="background-color:lightyellow;border:1px solid black;position:absolute;display:none "
+        id="studentStatUpdate ">
+        <form id="studentStatUpdateForm " action="biodataUgView.jsp " method="post " enctype="multipart/form-data ">
+            <table align="center " border="0 " bgcolor="lightcyan ">
+                <tr>
+                    <td align="center " colspan="2 ">
+                        <font size="3 ">
+                            <b>Update Student Status</b>
+                        </font>
+
+                    </td>
+                    <td><img alt="Close " src="./img/cross.JPG "
+                            onclick="document.getElementById('studentStatUpdate').style.display='none';"></td>
+                </tr>
+
+                <tr bgcolor="white ">
+                    <td>Status :</td>
+                    <td>
+                        <select name="selStatus " style="width:300px ">
+
+                            <option value="5 ">COURSE COMPLETED</option>
+
+                            <option value="3 ">STRUCK OFF</option>
+
+                            <option value="2 ">SEMESTER SUSPENSION ON PUNISHMENT GROUND</option>
+
+                            <option value="1 ">DEGREE AWARDED</option>
+
+                            <option value="4 ">SEMESTER WITHDRAWAL ON MEDICAL GROUND</option>
+
+                            <option value="0 " selected>ON ROLL</option>
+
+                            <option value="6 ">DISCIPLINARY ACTION</option>
+
+                            <option value="7 ">SEMESTER WITHDRAWAL ON PERSONAL GROUND</option>
+
+                            <option value="8 ">Withdrawal till Senate approval</option>
+
+                            <option value="9 ">Rollno changed</option>
+
+                            <option value="10 ">Medical Leave</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr bgcolor="white ">
+                    <td>Active From</td>
+                    <td><input type="text " name="activeFrom " style="width:300px " value="14-07-2021 "
+                            onclick="defaultDatePicker(event,'DD-MM-YYYY');" readonly /></td>
+                </tr>
+                <tr bgcolor="white ">
+                    <td>Active To</td>
+                    <td><input type="text " name="activeTo " style="width:300px " value=""
+                            onclick="defaultDatePicker(event,'DD-MM-YYYY');" readonly /></td>
+                </tr>
+                <tr bgcolor="white ">
+                    <td>Office Order No</td>
+                    <td><input type="text " name="ofc_ord_no " style="width:300px " value="" /></td>
+                </tr>
+                <tr bgcolor="white ">
+                    <td>Remarks</td>
+                    <td><textarea rows="3 " cols="50 " name="remarks "></textarea></td>
+                </tr>
+                <tr bgcolor="white ">
+                    <td>Supporting File</td>
+                    <td>
+                        <input type="file " name="supportingFile " value="" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2 " align="center ">
+                        <input type="hidden " name="rollno " value="21EE01038 " />
+                        <input type="hidden " name="edit " value="true " />
+                        <input type="hidden " name="action " value="status-update ">
+                        <input type="button " class="button " value="Save "
+                            onclick="submitStatusUpdate('studentStatUpdateForm')" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
